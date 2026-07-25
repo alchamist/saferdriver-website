@@ -198,7 +198,6 @@
     padding-top: 14px;
     padding-bottom: 14px;
   }
-  .nav-left { display: flex; align-items: center; gap: 28px; }
   .logotype {
     font-family: 'Overpass', sans-serif;
     font-weight: 800;
@@ -210,19 +209,6 @@
     white-space: nowrap;
     text-decoration: none;
     color: var(--nav-text);
-  }
-  .nav-link {
-    font-family: 'Overpass', sans-serif;
-    font-weight: 700;
-    font-size: 0.95rem;
-    color: var(--nav-text);
-    text-decoration: none;
-    opacity: 0.8;
-    white-space: nowrap;
-  }
-  .nav-link:hover { opacity: 1; }
-  @media (max-width: 560px) {
-    .nav-link { display: none; }
   }
   .logotype small {
     display: block;
@@ -710,6 +696,7 @@
   .contact-form input[type="email"],
   .contact-form input[type="tel"],
   .contact-form input[type="date"],
+  .contact-form select,
   .contact-form textarea {
     font-family: 'Public Sans', sans-serif;
     font-size: 1rem;
@@ -720,7 +707,7 @@
     width: 100%;
   }
   .contact-form textarea { resize: vertical; }
-  .contact-form input:focus, .contact-form textarea:focus {
+  .contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
     outline: 2px solid var(--green);
     outline-offset: 2px;
   }
